@@ -26,7 +26,7 @@ How do I run the project's automated tests?
 ### How to deploy
 
 1. Create a project in [Google Cloud Console](https://cloud.google.com/console)
-2. edit ...**/webapp/WEB-INFappengine.web.xml** and change **your-app-id**
+2. edit ...**/webapp/WEB-INF/appengine.web.xml** and change **your-app-id**
 ```
 git clone https://github.com/speed/newcrawler-gae-shell.git \
    	&& cd newcrawler-gae-shell \
