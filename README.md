@@ -30,7 +30,7 @@ How do I run the project's automated tests?
 ```
 git clone https://github.com/speed/newcrawler-gae-shell.git \
    	&& cd newcrawler-gae-shell \
-   	&& mvn clean appengine:devserver
+   	&& mvn clean appengine:update
 ```
 
 
