@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes autoGenerate="true">
+	
+    <datastore-index kind="Crawler_CrawlUrlTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="status" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlUrlTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlUrlTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="url" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlUrlTable" ancestor="false">
+        <property name="remark" direction="asc"/>
+        <property name="siteId" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlUrlTable" ancestor="false">
+        <property name="remark" direction="asc"/>
+        <property name="siteId" direction="asc"/>
+        <property name="url" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlUrlTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="status" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlUrlTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="status" direction="asc"/>
+        <property name="createDate" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlUrlTable" ancestor="false">
+        <property name="isInvalid" direction="asc"/>
+        <property name="siteId" direction="asc"/>
+        <property name="createDate" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlUrlTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlUrlCacheTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlUrlCacheTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="count" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlDataTable" ancestor="true">
+        <property name="crawlDataTables_INTEGER_IDX" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlDataTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlDataTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="createDate" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlDataTable" ancestor="false">
+        <property name="crawlUrl" direction="asc"/>
+        <property name="siteId" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlDataTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_AutoDeployFailureTable" ancestor="false">
+        <property name="status" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_AutoDeployFailureTable" ancestor="false">
+        <property name="status" direction="asc"/>
+        <property name="createDate" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_BackupTable" ancestor="false" >
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_BackupTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_BackupTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+	</datastore-index>
+    
+    <datastore-index kind="Crawler_UrlCheckResultTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_EmailNoticeTable" ancestor="false">
+    	<property name="__key__" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlInfoCacheTable" ancestor="false">
+        <property name="md5Digest" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlInfoCacheTable" ancestor="false">
+        <property name="md5Digest" direction="asc"/>
+        <property name="rulesVerId" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="SystemConfigTable" ancestor="false">
+        <property name="project" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="SystemConfigTable" ancestor="false">
+        <property name="name" direction="asc"/>
+        <property name="project" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_ScheduleTable" ancestor="false">
+        <property name="scheduleTime" direction="asc"/>
+        <property name="siteId" direction="asc"/>
+        <property name="taskName" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="FileChunkEntity" ancestor="false">
+        <property name="fileId" direction="asc"/>
+        <property name="index" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_DataRulesVerTable" ancestor="false">
+        <property name="siteId" direction="asc"/>
+        <property name="sortIndex" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_DataRulesVerTable" ancestor="false">
+        <property name="siteId" direction="asc"></property>
+        <property name="type" direction="asc"></property>
+        <property name="sortIndex" direction="asc"></property>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_StatisticTable" ancestor="false">
+        <property name="period" direction="asc"></property>
+        <property name="siteId" direction="asc"></property>
+        <property name="type" direction="asc"></property>
+        <property name="createDate" direction="desc"></property>
+    </datastore-index>
+    
+    <datastore-index kind="Spider_CrawlInfoCacheTable" ancestor="false">
+        <property name="readInfoDigest" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Spider_FileDownloadStatusTable" ancestor="false">
+        <property name="status" direction="asc"/>
+        <property name="updateDate" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Spider_FileDownloadStatusTable" ancestor="false">
+        <property name="siteId" direction="asc"></property>
+        <property name="createDate" direction="desc"></property>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlDataLogTable" ancestor="false">
+        <property name="siteId" direction="asc"></property>
+        <property name="createDate" direction="desc"></property>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlDataLogTable" ancestor="false">
+        <property name="isFinished" direction="asc"></property>
+        <property name="siteId" direction="asc"></property>
+        <property name="createDate" direction="desc"></property>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_DataRulesTable" ancestor="false">
+        <property name="rulesVerId" direction="asc"></property>
+        <property name="labelType" direction="asc"></property>
+        <property name="index" direction="asc"></property>
+        <property name="createDate" direction="asc"></property>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_DataRulesTable" ancestor="false">
+        <property name="rulesVerId" direction="asc"></property>
+        <property name="index" direction="asc"></property>
+        <property name="createDate" direction="asc"></property>
+    </datastore-index>
+    
+     <datastore-index kind="Crawler_DataRulesTable" ancestor="false">
+        <property name="rulesVerId" direction="asc"></property>
+        <property name="index" direction="asc"></property>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_DataRulesTable" ancestor="false">
+        <property name="rulesVerId" direction="asc"/>
+        <property name="labelType" direction="asc"/>
+        <property name="index" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_DataRulesTable" ancestor="false">
+        <property name="labelType" direction="asc"></property>
+        <property name="rulesVerId" direction="asc"></property>
+        <property name="index" direction="desc"></property>
+	</datastore-index>
+	
+	<datastore-index kind="Crawler_PluginCacheTable" ancestor="false">
+        <property name="jarUrl" direction="asc"></property>
+        <property name="createDate" direction="desc"></property>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlDataDeployTable" ancestor="false">
+        <property name="isRetry" direction="asc"/>
+        <property name="createDate" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_FileDownloadStatusTable" ancestor="false">
+        <property name="siteId" direction="asc"></property>
+        <property name="createDate" direction="desc"></property>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_SpiderRateTable" ancestor="false">
+        <property name="day" direction="asc"></property>
+        <property name="timestamp" direction="desc"></property>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_PluginConfigTable" ancestor="false">
+        <property name="label" direction="asc"/>
+        <property name="type" direction="asc"/>
+        <property name="sortIndex" direction="asc"/>
+    </datastore-index>
+
+    <datastore-index kind="Crawler_PluginTable" ancestor="false">
+        <property name="label" direction="asc"/>
+        <property name="type" direction="asc"/>
+        <property name="sortIndex" direction="asc"/>
+    </datastore-index>
+    
+</datastore-indexes>

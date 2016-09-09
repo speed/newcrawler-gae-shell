@@ -1,0 +1,444 @@
+<html>
+<head>
+<link type='text/css' rel='stylesheet' href='../static/xpath/mark.css?v2.3' />
+
+<link type='text/css' rel='stylesheet' href='//cdn.newcrawler.com/static/js/datetimepicker-master/jquery.datetimepicker.css' />
+<link type='text/css' rel='stylesheet' href='//cdn.newcrawler.com/static/js/clockpicker/dist/jquery-clockpicker.min.css' />
+<link type='text/css' rel='stylesheet' href='../static/css/pagination.css' />
+
+<script type="text/javascript" src="//cdn.newcrawler.com/static/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="//cdn.newcrawler.com/static/js/datetimepicker-master/jquery.datetimepicker.min.js"></script>
+<script type="text/javascript" src="//cdn.newcrawler.com/static/js/clockpicker/dist/jquery-clockpicker.js"></script>
+<script type="text/javascript" src="//cdn.newcrawler.com/static/js/zeroclipboard-2.1.6/ZeroClipboard.min.js"></script>
+<script type="text/javascript" src="//cdn.newcrawler.com/static/js/jsonrpc-min.js"></script>
+<script type="text/javascript" src="//cdn.newcrawler.com/static/js/jquery.pagination-min.js"></script>
+<script type="text/javascript" src="//cdn.newcrawler.com/static/js/jquery.json-2.3-min.js"></script>
+<script type="text/javascript" src="../static/js/jquery-table2excel/dist/jquery.table2excel.js"></script>
+
+<script type="text/javascript" src="../static/js/main.crawldata.log-min.js"></script>
+<script type="text/javascript" src="../static/js/main.logsview.console-min.js"></script>
+
+<script type="text/javascript" src="../static/xpath/depend.js"></script>
+<script type="text/javascript" src="../static/xpath/mark-min.js?v2.4"></script>
+
+</head>
+<body style="padding: 0px; margin: 0px; overflow: hidden;">
+		
+<div class="ncx_toolbar_cover">
+</div>
+<div id="ncx_toolbar">
+	<div class="ncx_toolbar_logo" style="float:left;">
+		<a href="//www.newcrawler.com"><img alt="New Crawler" src="//cdn.newcrawler.com/static/images/newcrawler-logo2.png" width="170"></a>
+	</div>
+	
+	<div style="margin-left: 200px">
+	<div class="ncx-toolbar-section ncx-datatypes" style="display: inline-block; -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px);">    
+		<a lang="1" class="ncx-label ncx-data-dot ncx-yellow active">
+			<span class="ncx-count">0</span>
+			<span class="ncx-delete-datatype" style="display: none;"></span>
+		</a>    
+		<a lang="0" class="ncx-toolbar-button ncx-pagination ncx-data-dot" title="Pagination" style="display: inline-block; -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px);"></a>
+		
+		<div class="ncx-cron-dot" >
+		<a lang="" class="ncx-toolbar-button ncx-cron ncx-data-dot" title="Cron" style="display: inline-block; -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px);"></a>
+		
+		<div class="ncx-cron-config">
+		
+		<input id="ncx-cron-id"  type="hidden" >
+		<span class="ncx-poptip-arrow ncx-poptip-arrow-top"><em>◆</em><i>◆</i></span>
+		
+		<div style="padding-top: 10px;">
+		<div style="float:left;width:60px;height: 30px;line-height:30px;">
+		<a href="javascript:void(0)" title="Date is empty，Every HH:mm run. Date is 0000-00-00，Daily HH:mm run." style="text-decoration: underline;">Date</a>
+		</div>
+		<div style="padding-left:60px;height: 35px;line-height:35px;">
+		<input id="ncx-cron-date"  type="text" value="0000-00-00" placeholder="yyyy-MM-dd"  style="height: 30px;"></div>
+		</div>
+		
+		<div style="padding-top: 10px;">
+		<div style="float:left;width:60px;height: 35px;line-height:35px;">Time</div>
+		<div style="padding-left:60px;height: 30px;line-height:30px;">
+		<input id="ncx-cron-time"  type="text" class="form-control" value="" placeholder="HH:mm" style="height: 30px;" readonly>
+		</div>
+		</div>
+		
+		
+		</div>
+		</div>
+		
+		<div class="ncx-setting-dot" >
+		<a lang="" class="ncx-toolbar-button ncx-setting ncx-data-dot" title="Setting" style="display: inline-block; -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px);"></a>
+		
+		<div class="ncx-setting-config">
+		<span class="ncx-poptip-arrow ncx-poptip-arrow-top"><em>◆</em><i>◆</i></span>
+		
+		<div style="padding-top: 10px;">
+		<div style="float:left;width:60px;height: 35px;line-height:35px;">Charset</div>
+		<div style="padding-left:60px;height: 30px;line-height:30px;">
+		<select id="ncx-charset-select" style="height: 30px;">
+			<option value=""></option>
+			<option value="UTF-8">UTF-8</option>
+			<option value="GBK">GBK</option>
+			<option value="GB2312">GB2312</option>
+		</select>
+		
+		<input id="ncx-charset"  type="text" style="height: 30px;">
+		</div>
+		</div>
+		
+		<div style="padding-top: 10px;">
+		<div style="float:left;width:60px;height: 35px;line-height:35px;">Headers</div>
+		<div style="padding-left:60px;height: 30px;line-height:30px;">
+		<textarea id="ncx-headers"  style="height: 120px; width: 100%;"></textarea>
+		</div>
+		</div>
+		
+		</div>
+		</div>
+		<a class="ncx-new-datatype" title="New Datatype" style="display:none;"></a> 
+	</div>
+	
+	<div class="ncx-toolbar-section">      
+	<button class="ncx-toolbar-button-primary ncx ncx-button ncx-save">Save</button>
+	</div>
+	
+	<div class="ncx-toolbar-section">      
+	<button class="ncx-toolbar-button-primary ncx ncx-button ncx-test">Test</button>
+	<span class="ncx-poptip-arrow view-pop" style="display:none;top: 32px;height: 0.3em;width: 1em;"><em>◆</em><i>◆</i></span>
+	</div>
+	
+	<div class="ncx-toolbar-section">      
+	<button class="ncx-toolbar-button-primary ncx ncx-button ncx-view">View</button>
+	<span class="ncx-poptip-arrow view-pop" style="display:none;top: 32px;height: 0.3em;width: 1em;"><em>◆</em><i>◆</i></span>
+	</div>
+	<div class="ncx-toolbar-section msg">  
+	    
+	</div>
+	<div class="ncx-toolbar-section ">      
+		<a href="javascript:void(0);" title="" style="margin-left: 20px;padding-top: 10px;" target="_blank">
+		<span id="url" style="width:300px;white-space: nowrap; text-overflow: ellipsis; overflow: hidden;display: inline-block;"></span>
+		</a>
+		
+	</div>
+	
+	<div class="ncx-toolbar-section ncx-js" title="Load JavaScript" style="float:right;">
+	<span style="padding-top: 1px; position: absolute;">
+	<input type="hidden" id="ncx-pluginId"/> 
+	<input type="checkbox" name="ncx-isJs" class="isJavaScript" value="true"/> 
+	</span>
+	<a href="javascript:void(0);" title="Can't find the data you want?" style="margin-left: 20px;padding-top: 10px;">Load JavaScript</a>
+	</div>
+	</div>
+	
+	
+</div>
+
+<div id="ncx_tooltest">
+	
+	<div class="ncx-content-top">
+		<div class="ncx-content-top-data">
+		<table id="ncx_data_list_test" class="ncx_data_list">
+		</table>
+		</div>
+		
+		<div class="ncx-content-top-btn">
+		
+		<button class="ncx-toolbar-button-primary ncx ncx-button ncx-details">Details</button>
+		<button class="ncx-toolbar-button-primary ncx ncx-button ncx-next">Next</button>
+		
+		<div class='loading' style="top: -35px;position: relative; left: 160px; display:none;"></div>
+		</div>
+		
+		<div class="ncx-content-top-details" style="display:none;">
+		<span class="ncx-poptip-arrow view-pop" style="left: 10px;top: -21px;height: 0.4em;width: 1em;"><em>◆</em><i style="color: #000000;">◆</i></span>
+		
+		<div class="ncx-details-content">
+		<div class="title">Details</div>
+		
+		<div class="fieldMap">
+		<div><span class="label">总耗时<input type="hidden" name="param" value="article_content"></span>: <span class="costTotal"></span></div>
+		<div><span class="label">网址抓取耗时<input type="hidden" name="param" value="article_content"></span>: <span class="costFetch"></span></div>
+		<div><span class="label">规则分析耗时<input type="hidden" name="param" value="article_content"></span>: <span class="costParse"></span></div>
+		
+		<div><span class="label">爬虫<input type="hidden" name="param" value="article_title"></span>: <span class="spider"></span></div>
+		<div><span class="label">Cookies<input type="hidden" name="param" value="article_author"></span>: <span class="cookie"></span></div>
+		<div><span class="label">总数<input type="hidden" name="param" value="article_thumbnail"></span>: <span class="total"></span></div>
+		<div><span class="label">下一页<input type="hidden" name="param" value="article_categories"></span>: <a class="nextUrl" target="_blank" style="color: #a5d8ff;"></a></div>
+		</div>
+		
+		</div>
+		</div>
+	</div>
+</div>
+<div id="ncx_toolview">
+	<div class="ncx-export-window ncx-export-window-wordpress" style="display:none;">
+		<div class="ncx-export-logo ncx-export-wordpress" style="float: left; padding: 70px 0 0 70px;background-color: white;">
+		</div>
+		
+		<div class="close">×</div>
+		
+		<div class="ncx-export-content">
+		<div class="title">Wordpress</div>
+		<div>网站地址(必填)，<span class="help"> 您网站的web首页地址, 例如www.newcrawler.com, 请勿带index.php或index.html等</span></div>
+		<div><input type="text" name="__url"/></div>
+		<div>发布密码(必填)，<span class="help"> 请将wordpress后台中插件设置页面的发布密码粘贴过来, ps:请自行使用数字字母组合修改保存</span></div>
+		<div><input type="text" name="__sign"/></div>
+		
+		<div>文章发布状态</div>
+		<div><select name="post_status"><option value="publish" selected>Published</option><option value="draft">Draft</option></select></div>
+		<div style="display:none;">文章访问密码</div>
+		<div style="display:none;"><input type="text" name="access_password"/></div>
+		
+		<div>字段映射</div>
+		<div>
+		<div class="fieldMap">
+		<div><span>Article Title<input type="hidden" name="param" value="article_title"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		<div><span>Article Content<input type="hidden" name="param" value="article_content"></span>:<select class="allFileds"><option value="">--</option></select><input type="checkbox" name="isUploadImage">Upload Image</div>
+		<div><span>Article Author<input type="hidden" name="param" value="article_author"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		<div><span>Article Thumbnail<input type="hidden" name="param" value="article_thumbnail"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		<div><span>Article Categories<input type="hidden" name="param" value="article_categories"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		<div style="display:none;"><span>Article Topics<input type="hidden" name="param" value="article_topics"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		<div style="display:none;"><span>Publish Time<input type="hidden" name="param" value="publish_time"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		</div>
+		</div>
+		</div>
+	</div>
+	<div class="ncx-export-window ncx-export-window-db" style="display:none;">
+		<div class="ncx-export-logo ncx-export-db" style="float: left; padding: 70px 0 0 70px;background-color: white;">
+		
+		</div>
+		
+		<div class="close">×</div>
+		
+		<div class="ncx-export-content">
+		
+		<div class="title">Database</div>
+		<div>数据库类型</div>
+		<div>
+			<select name="dbType">
+				<option value="mysql" selected>MYSQL</option>
+			</select>
+		</div>
+		<div>数据库主机</div>
+		<div><input type="text" name="dbHost" value="127.0.0.1"/></div>
+		<div>数据库端口</div>
+		<div><input type="text" name="dbPort" value="3306"/></div>
+		<div>数据库名称</div>
+		<div><input type="text" name="dbName" value=""/></div>
+		<div>数据库用户名</div>
+		<div><input type="text" name="dbUser" value=""/></div>
+		<div>数据库密码</div>
+		<div><input type="text" name="dbPassword" value=""/></div>
+		<div>数据库字符集</div>
+		<div>
+			<select id="dbCharset" name="dbCharset">
+				<option value="UTF-8" selected>UTF-8</option>
+				<option value="GBK">GBK</option>
+				<option value="GB2312">GB2312</option>
+			</select>
+		</div>
+		<div>数据库表名</div>
+		<div><input type="text" name="dbTable" value="" readonly="readonly"/></div>
+		<div>字段映射</div>
+		<div>
+		<div class="fieldMap">
+		<div class="temp" style="display:none;"><input type="hidden" name="labelName" value=""><span class="labelName">Label Name</span>:<input type="text" name="param" value=""> <span style="padding-left: 20px;">Length:<input type="text" name="length" value="1500" style="width: 70px;" readonly="readonly"></span></div>
+		</div>
+		</div>
+		</div>
+	</div>
+	<div class="ncx-export-window ncx-export-window-rss" style="display:none;">
+		<div class="ncx-export-logo ncx-export-rss" style="float: left; padding: 70px 0 0 70px;background-color: white;">
+		
+		</div>
+		
+		<div class="close">×</div>
+		
+		<div class="ncx-export-content">
+		
+		<div class="title">RSS</div>
+		<div>字段映射</div>
+		<div>
+		<div class="fieldMap">
+		<div><span>Title<input type="hidden" name="param" value="title"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		<div><span>Link<input type="hidden" name="param" value="link"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		<div><span>Description<input type="hidden" name="param" value="description"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		<div><span>Author<input type="hidden" name="param" value="author"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		<div><span>Category<input type="hidden" name="param" value="category"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		<div><span>Comments<input type="hidden" name="param" value="comments"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		<div><span>PubDate<input type="hidden" name="param" value="pubDate"></span>:<select class="allFileds"><option value="">--</option></select></div>
+		</div>
+		</div>
+		
+		<div style="padding: 30px 30px 30px 135px;" >
+		<a class="ncx-toolbar-button-primary ncx-button ncx-btn-rss" target="_blank" href="javascript:void(0);">RSS</a>
+		</div>
+		</div>
+	</div>
+	
+	<div class="ncx-content-top">
+		<div class="ncx-content-top-data">
+		<table id="ncx_data_list" class="ncx_data_list">
+		</table>
+				
+		</div>
+		<div class="ncx-content-top-btn">
+		
+		<button class="ncx-toolbar-button-primary ncx ncx-button ncx-run">Run</button>
+		<button class="ncx-toolbar-button-primary ncx ncx-button ncx-export">Export</button>
+		<button class="ncx-toolbar-button-primary ncx ncx-button ncx-refresh">Refresh</button>
+		
+		<select id="ncx-pagination-size" style="height: 25px;">
+			<option value="20" selected>20</option>
+			<option value="100">100</option>
+			<option value="500">500</option>
+			<option value="1000">1000</option>
+			<option value="2000">2000</option>
+			<option value="3000">3000</option>
+			<option value="5000">5000</option>
+			<option value="10000">10000</option>
+		</select>
+		
+		<div class='loading' style="top: -35px;position: relative; left: 160px; display:none;"></div>
+		</div>
+		
+		<div style="position: fixed; top: 57px; left: 300px; background: white;">
+		<div id="ncx-pagination">
+		
+		</div>
+		
+		</div>
+		
+		<div class="ncx-content-top-export" style="display:none;">
+		<span class="ncx-poptip-arrow view-pop" style="display:none;left: 60px;top: -21px;height: 0.4em;width: 1em;"><em>◆</em><i>◆</i></span>
+		<a class="ncx-export-csv ncx-export-icon" href="javascript:void(0);" title="Excel">
+		
+		</a>
+		<a class="ncx-export-plotly ncx-export-icon " href="javascript:void(0);" target="_blank" title="plot.ly">
+		
+		</a>
+		<a class="ncx-export-coding ncx-export-icon" href="javascript:void(0);" target="_blank" title="JSON">
+		
+		</a>
+		<a class="ncx-export-rss ncx-export-icon" href="javascript:void(0);" target="_blank" title="RSS">
+		
+		</a>
+		<a class="ncx-export-wordpress ncx-export-icon " href="javascript:void(0);" target="_blank" title="Wordpress">
+		
+		</a>
+		<a class="ncx-export-db ncx-export-icon " href="javascript:void(0);" target="_blank" title="Database">
+		
+		</a>
+		</div>
+	</div>
+	
+	<div class="ncx-content-bottom">
+		<a href="javascript:void(0);" class="ncx-crawlDataLog-a"></a>
+		<div id="ncx-crawlDataLog" style="display:none;">
+		<table id="ncx-crawlDataLogList" width="100%" align="center" class="table_border2 tableList" style="border:1px solid #CCCCCC;border-collapse:collapse;background-color: #FFFFFF;">
+			<tr>
+				<th width="25" nowrap bgcolor="whiteSmoke"></th>
+				<th width="25" nowrap bgcolor="whiteSmoke">ID</th>
+				<th width="60" nowrap bgcolor="whiteSmoke">Task</th>
+				<th width="60" nowrap bgcolor="whiteSmoke">Speed</th>
+				<th width="120" nowrap bgcolor="whiteSmoke">CreateTime</th>
+				<th width="120" nowrap bgcolor="whiteSmoke">CompleteTime</th>
+				<th width="120" nowrap bgcolor="whiteSmoke">CostTime</th>
+				<th width="65" nowrap bgcolor="whiteSmoke">Enqueued</th>
+				<th width="65" nowrap bgcolor="whiteSmoke">Dequeued</th>
+				<th width="65" nowrap bgcolor="whiteSmoke">Running</th>
+				<th width="65" nowrap bgcolor="whiteSmoke">Exception</th>
+				<th width="65" nowrap bgcolor="whiteSmoke">Empty</th>
+				<th width="65" nowrap bgcolor="whiteSmoke">Count</th>
+				<th width="65" nowrap bgcolor="whiteSmoke">Deploy</th>
+				<th width="80" nowrap bgcolor="whiteSmoke">Status</th>
+				<th width="120" nowrap bgcolor="whiteSmoke">Progressbar</th>
+				
+				<th width="80" nowrap bgcolor="whiteSmoke">Action</th>
+			</tr>
+		</table>
+		</div>
+		<a href="javascript:void(0);" class="downloadCsv" style="display:none;" target="_blank"><span>download csv</span></a>
+		<a href="javascript:void(0);" class="logsViewConsole"></a>
+		<DIV class="logsViewConsoleWindow" style="display:none;">
+			<div class="logs">
+				<table style="table-layout: fixed;width:100%;border: 0;border-collapse: collapse;"><tbody>
+				<tr><td width="150"></td><td width="100"></td><td width="100"></td><td style="max-width:50%;"></td><td style="max-width:20%;"></td></tr>
+				</tbody></table>
+			</div>
+		</DIV>
+	</div>
+</div>
+
+
+<div id="newcrawler-selector">
+
+</div>
+<iframe id="newcrawler" name="newcrawler" style='display: block; width: 100%; border: 0px; height: 100%'></iframe>
+
+<script>
+#{js}
+var newcrawler_url='#{url}'; 
+
+var newcrawler_refresh=null; 
+if(window.opener){
+	try{
+		newcrawler_refresh=window.opener.refreshCrawlRules;
+	}catch(e){}
+}
+
+nc = {};
+nc["i18n"]=function(key, params){
+  var msg='';
+  if (_i18n[key] == 'undefined') {
+    return '__' + key + '__';
+  } else {
+    msg= _i18n[key];
+  }
+  if(typeof(params)=='object' && (params instanceof Array)){
+  	for(i=0,len=params.length;i<len;i++){
+  		var regex='{'+i+'}';
+  		msg=msg.replace(regex, params[i]);
+  	}
+  }else{
+  	var regex='{0}';
+  	msg=msg.replace(regex, params);
+  }
+  return msg;
+};
+var _i18n = {
+  'res.not.select.crawler' : 'Not crawler'
+, 'res.logs.type.crawl' : 'Fetch'
+, 'res.logs.type.crawl.retry' : 'Retry'
+, 'res.logs.type.deploy' : 'Deploy'
+, 'res.logs.type.deploy.retry' : 'Deploy retry'
+, 'res.logs.type.download' : 'Download'
+, 'res.logs.type.download.retry' : 'Download Retry'
+, 'res.console.min' : 'Min'
+, 'res.console.max' : 'Max'
+, 'res.console.resize' : 'Resize'
+	
+, 'res.scheduledTasks.name1' : 'Fetch'
+, 'res.scheduledTasks.name2' : 'Checker'
+, 'res.scheduledTasks.name3' : 'Publish Data'
+, 'res.scheduledTasks.name4' : 'Remove'
+, 'res.scheduledTasks.name5' : 'Update URL'
+	
+, 'res.background.statistics' : 'Statistics'
+, 'res.background.statistics.failure' : 'Statistics Failure'
+, 'res.task.run.success' : 'Success'
+, 'res.task.run.failure' : 'Failure'
+, 'res.task.stop.success' : 'Success'
+, 'res.task.stop.failure' : 'Failure'
+, 'res.task.run' : 'Run'
+, 'res.task.stop' : 'Stop'
+, 'res.exception.url.list' : 'List'
+, 'res.page.prev' : 'prev'
+, 'res.page.next' : 'next'
+, 'res.published' : 'Published'
+, 'res.unpublished' : 'unPublished'
+	};
+	
+</script>
+</body>
+</html>

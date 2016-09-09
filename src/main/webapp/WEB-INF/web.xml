@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+						http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	
+	<listener>
+	  <listener-class>lllllllllllllll.IIIllllIlIlIIllII</listener-class>
+	</listener>
+	
+	<filter>
+		<filter-name>lllllllllllllll.IIIlIIIllIIIllllI</filter-name>
+		<filter-class>lllllllllllllll.IIIlIIIllIIIllllI</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>lllllllllllllll.IIIlIIIllIIIllllI</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>lllllllllllllll.IIIlIlllllIlIIlII</filter-name>
+		<filter-class>lllllllllllllll.IIIlIlllllIlIIlII</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>lllllllllllllll.IIIlIlllllIlIIlII</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>lllllllllllllll.IIIlIIlllIIlIIIIl</filter-name>
+		<filter-class>lllllllllllllll.IIIlIIlllIIlIIIIl</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>lllllllllllllll.IIIlIIlllIIlIIIIl</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlIlllIIllIlllI</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlIlllIIllIlllI</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlIlllIIllIlllI</servlet-name>
+		<url-pattern>/_ah/remote/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlllIllIlllIlII</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlllIllIlllIlII</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlllIllIlllIlII</servlet-name>
+		<url-pattern>/_ah/cron/scheduling</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlIIIlIlIllIIll</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlIIIlIlIllIIll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlIIIlIlIllIIll</servlet-name>
+		<url-pattern>/_ah/queue/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIllIlIlIlIllIll</servlet-name>
+		<servlet-class>lllllllllllllll.IIIllIlIlIlIllIll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIllIlIlIlIllIll</servlet-name>
+		<url-pattern>/api/url/import</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlIIIIllIIIIIIl</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlIIIIllIIIIIIl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlIIIIllIIIIIIl</servlet-name>
+		<url-pattern>/api/url/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlIIllIlllllIIl</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlIIllIlllllIIl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlIIllIlllllIIl</servlet-name>
+		<url-pattern>/api/url/fetch</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIllIlIllIIllllI</servlet-name>
+		<servlet-class>lllllllllllllll.IIIllIlIllIIllllI</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIllIlIllIIllllI</servlet-name>
+		<url-pattern>/api/data/export</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIllIlIllllIlIll</servlet-name>
+		<servlet-class>lllllllllllllll.IIIllIlIllllIlIll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIllIlIllllIlIll</servlet-name>
+		<url-pattern>/member/api/data/download</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlllllIllllIlll</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlllllIllllIlll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlllllIllllIlll</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        <servlet-name>lllllllllllllll.IIIllIIIlIllIIlIl</servlet-name>
+        <servlet-class>lllllllllllllll.IIIllIIIlIllIIlIl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lllllllllllllll.IIIllIIIlIllIIlIl</servlet-name>
+        <url-pattern>/file/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>lllllllllllllll.IIIlIIIIlIlIIlllI</servlet-name>
+        <servlet-class>lllllllllllllll.IIIlIIIIlIlIIlllI</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lllllllllllllll.IIIlIIIIlIlIIlllI</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>lllllllllllllll.IIIlIlIlIlIIlllIl</servlet-name>
+        <servlet-class>lllllllllllllll.IIIlIlIlIlIIlllIl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lllllllllllllll.IIIlIlIlIlIIlllIl</servlet-name>
+        <url-pattern>/error/*</url-pattern>
+    </servlet-mapping>
+    
+    <!-- WEB -->
+    <servlet>
+		<servlet-name>lllllllllllllll.IIIllIllIIllIIlll</servlet-name>
+		<servlet-class>lllllllllllllll.IIIllIllIIllIIlll</servlet-class>
+		<init-param>
+			<param-name>gzip_threshold</param-name>
+			<param-value>200</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIllIllIIllIIlll</servlet-name>
+		<url-pattern>/JSON-RPC/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIllllIllIlIIlll</servlet-name>
+		<servlet-class>lllllllllllllll.IIIllllIllIlIIlll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIllllIllIlIIlll</servlet-name>
+		<url-pattern>/member/viewcode</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlIlIlIIIlllllI</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlIlIlIIIlllllI</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlIlIlIIIlllllI</servlet-name>
+		<url-pattern>/member/regextest</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIllIIIlIIlllllI</servlet-name>
+		<servlet-class>lllllllllllllll.IIIllIIIlIIlllllI</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIllIIIlIIlllllI</servlet-name>
+		<url-pattern>/member/newcrawler</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlllllIIIllIIIl</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlllllIIIllIIIl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlllllIIIllIIIl</servlet-name>
+		<url-pattern>/member/newcrawler/read</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlllIllIIIlllII</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlllIllIIIlllII</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlllIllIIIlllII</servlet-name>
+		<url-pattern>/member/rules/query</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlIlllllIIlIIlI</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlIlllllIIlIIlI</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlIlllllIIlIIlI</servlet-name>
+		<url-pattern>/member/rules/save</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlIllIllllllIll</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlIllIllllllIll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlIllIllllllIll</servlet-name>
+		<url-pattern>/i18n</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlIlIIlIlllllIl</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlIlIIlIlllllIl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlIlIIlIlllllIl</servlet-name>
+		<url-pattern>/language</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIllIllIIIllIlII</servlet-name>
+		<servlet-class>lllllllllllllll.IIIllIllIIIllIlII</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIllIllIIIllIlII</servlet-name>
+		<url-pattern>/index.jhtml</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIlIIllIllllIlll</servlet-name>
+		<servlet-class>lllllllllllllll.IIIlIIllIllllIlll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIlIIllIllllIlll</servlet-name>
+		<url-pattern>/works</url-pattern>
+	</servlet-mapping>
+    
+	<servlet>
+		<servlet-name>lllllllllllllll.IIIllllIIIIlIIlIl</servlet-name>
+		<servlet-class>lllllllllllllll.IIIllllIIIIlIIlIl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lllllllllllllll.IIIllllIIIIlIIlIl</servlet-name>
+		<url-pattern>/ping</url-pattern>
+	</servlet-mapping>
+	
+	<session-config>
+		<session-timeout>600</session-timeout>
+	</session-config>
+	
+	<error-page>
+        <error-code>401</error-code>
+        <location>/error/401</location>
+    </error-page>
+    
+	<welcome-file-list>
+		<welcome-file>index.jhtml</welcome-file>
+	</welcome-file-list>
+</web-app>
