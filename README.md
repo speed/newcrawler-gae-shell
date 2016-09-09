@@ -33,24 +33,3 @@ git clone https://github.com/speed/newcrawler-gae-shell.git \
    	&& mvn clean appengine:update
 ```
 
-
-<!--- 
-## Troubleshooting & useful tools
-
-### Examples of common tasks
-
-e.g.
-* How to make curl requests while authenticated via oauth.
-* How to monitor background jobs.
-* How to run the app through a proxy.
- -->
-
-## Contributing changes
-
-* See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-
-## Licensing
-
-* See [LICENSE](LICENSE)
-
