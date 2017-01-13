@@ -262,4 +262,9 @@
         <property name="sortIndex" direction="asc"/>
     </datastore-index>
     
+    <datastore-index kind="Crawler_SiteTable" ancestor="false">
+		<property name="pin2Sidebar" direction="asc"></property>
+		<property name="name" direction="asc"></property>
+	</datastore-index>
+    
 </datastore-indexes>
