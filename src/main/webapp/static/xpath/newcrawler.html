@@ -19,7 +19,7 @@
 <script type="text/javascript" src="../static/js/main.logsview.console-min.js"></script>
 
 <script type="text/javascript" src="../static/xpath/depend.js"></script>
-<script type="text/javascript" src="../static/xpath/mark-min.js?v3.7"></script>
+<script type="text/javascript" src="../static/xpath/mark-min.js?v3.7.3"></script>
 <script type="text/javascript" src="../static/js/base64-min.js"></script>
 
 <link rel="stylesheet" href="../static/js/codemirror/codemirror.css">
@@ -168,11 +168,6 @@
                 <span class="hint-text" style="line-height: 20px;">
                     <span class="info" style="width: 80px;">
                         <span class="glyphicon glyphicon-info-sign"></span>
-                        Space
-                    </span>
-                    <span style="line-height: 1.42857;">Turn on/off the detail.</span><br/>
-                    <span class="info" style="width: 80px;">
-                        <span class="glyphicon glyphicon-info-sign"></span>
                         ESC
                     </span>
                     <span style="line-height: 1.42857;">Reset column.</span><br/>
@@ -214,6 +209,13 @@
 	<input type="checkbox" name="ncx-isEvent" class="isEvent" value="true"/> 
 	</span>
 	<a href="javascript:void(0);" title="Turn Off/On selector" style="margin-left: 20px;padding-top: 10px;">Event</a>
+	</div>
+	
+	<div class="ncx-toolbar-section ncx-single" title="Single match" style="float:right;margin-top: 8px;">
+	<span style="padding-top: 1px; position: absolute;">
+	<input type="checkbox" name="ncx-isSingle" class="isSingle" value="true"/> 
+	</span>
+	<a href="javascript:void(0);" title="Turn Off/On single match" style="margin-left: 20px;padding-top: 10px;">Single</a>
 	</div>
 	
 	</div>
@@ -377,7 +379,7 @@
 		<button class="ncx-toolbar-button-primary ncx ncx-button ncx-export">Export</button>
 		<button class="ncx-toolbar-button-primary ncx ncx-button ncx-refresh">Refresh</button>
 		
-		<select id="ncx-pagination-size" style="height: 25px;">
+		<select id="ncx-pagination-size" style="height: 26px; line-height: 26px; top: -2px; position: relative;">
 			<option value="20" selected>20</option>
 			<option value="100">100</option>
 			<option value="500">500</option>
