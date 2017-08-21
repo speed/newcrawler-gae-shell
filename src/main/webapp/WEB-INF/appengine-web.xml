@@ -18,5 +18,6 @@
   <warmup-requests-enabled>true</warmup-requests-enabled> 
   <sessions-enabled>true</sessions-enabled>
   <runtime>java8</runtime>
+  <!-- https://cloud.google.com/appengine/docs/standard/java/config/appref#url-stream-handler -->
   <url-stream-handler>urlfetch</url-stream-handler>
 </appengine-web-app>
