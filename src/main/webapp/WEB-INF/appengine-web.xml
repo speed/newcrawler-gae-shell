@@ -18,4 +18,5 @@
   <warmup-requests-enabled>true</warmup-requests-enabled> 
   <sessions-enabled>true</sessions-enabled>
   <runtime>java8</runtime>
+  <url-stream-handler>urlfetch</url-stream-handler>
 </appengine-web-app>
