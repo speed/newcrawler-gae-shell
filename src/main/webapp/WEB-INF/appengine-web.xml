@@ -5,7 +5,9 @@
   <!-- Configure java.util.logging -->  
   <system-properties> 
     <property name="com.google.gdata.DisableCookieHandler" value="true"/>  
-    <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/> 
+    <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+    <!-- By default, the deadline for a fetch is 5 seconds -->
+    <property name="appengine.api.urlfetch.defaultDeadline" value="15"/>
   </system-properties>  
   <static-files>
         <include path="/**.html" />
