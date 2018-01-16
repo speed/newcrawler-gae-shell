@@ -6,5 +6,10 @@
 		<description>scheduling.</description>
 		<schedule>every 1 minutes</schedule>
 	</cron>
+	<cron>
+	    <url>/_ah/sessioncleanup?clear</url>
+	    <description>Clean up sessions</description>
+	    <schedule>every 30 minutes</schedule>
+  	</cron>
 	
 </cronentries>
