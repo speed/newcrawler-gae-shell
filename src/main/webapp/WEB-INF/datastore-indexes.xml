@@ -69,11 +69,6 @@
     
     <datastore-index kind="Crawler_CrawlDataTable" ancestor="false">
         <property name="siteId" direction="asc"/>
-        <property name="createDate" direction="desc"/>
-    </datastore-index>
-    
-    <datastore-index kind="Crawler_CrawlDataTable" ancestor="false">
-        <property name="siteId" direction="asc"/>
         <property name="createDate" direction="asc"/>
     </datastore-index>
     
@@ -86,6 +81,12 @@
     <datastore-index kind="Crawler_CrawlDataTable" ancestor="false">
         <property name="siteId" direction="asc"/>
         <property name="__key__" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Crawler_CrawlDataTable" ancestor="false">
+        <property name="siteId" direction="asc"></property>
+        <property name="createDate" direction="desc"></property>
+        <property name="__key__" direction="desc"></property>
     </datastore-index>
     
     <datastore-index kind="Crawler_AutoDeployFailureTable" ancestor="false">
