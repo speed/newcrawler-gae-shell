@@ -16,6 +16,7 @@
     <handler file="/over_quota.html" error-code="over_quota"/>
   </static-error-handlers>
   
+  <runtime>java8</runtime>
   <threadsafe>true</threadsafe>  
   <warmup-requests-enabled>true</warmup-requests-enabled> 
   <sessions-enabled>true</sessions-enabled>
