@@ -158,6 +158,11 @@
         <property name="lastTime" direction="asc"/>
     </datastore-index>
     
+    <datastore-index kind="Crawler_ScheduleTable" ancestor="false">
+		<property name="status" direction="asc"/>
+		<property name="nextTime" direction="asc"/>
+	</datastore-index>
+    
     <datastore-index kind="FileChunkEntity" ancestor="false">
         <property name="fileId" direction="asc"/>
         <property name="index" direction="asc"/>
