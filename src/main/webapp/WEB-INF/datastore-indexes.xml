@@ -211,6 +211,11 @@
         <property name="siteId" direction="asc"></property>
         <property name="createDate" direction="desc"></property>
     </datastore-index>
+    <datastore-index kind="Crawler_CrawlDataLogTable" ancestor="false">
+		<property name="isFinished" direction="asc"/>
+		<property name="status" direction="asc"/>
+		<property name="createDate" direction="desc"/>
+	</datastore-index>
     
     <datastore-index kind="Crawler_DataRulesTable" ancestor="false">
         <property name="rulesVerId" direction="asc"></property>
