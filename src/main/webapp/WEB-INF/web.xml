@@ -8,7 +8,7 @@
 	version="2.5">
 	
 	<listener>
-	  <listener-class>lllllllllllllll.IllIIlIlllIlII</listener-class>
+	  <listener-class>lllllllllllllll.IllIllllllIlIl</listener-class>
 	</listener>
 	
 	<filter>
@@ -25,11 +25,11 @@
 	</filter-mapping>
 	
 	<filter>
-		<filter-name>lllllllllllllll.IIIIIlIlIIlllI</filter-name>
-		<filter-class>lllllllllllllll.IIIIIlIlIIlllI</filter-class>
+		<filter-name>lllllllllllllll.IIIIlIIIlIIlIl</filter-name>
+		<filter-class>lllllllllllllll.IIIIlIIIlIIlIl</filter-class>
 	</filter>
 	<filter-mapping>
-		<filter-name>lllllllllllllll.IIIIIlIlIIlllI</filter-name>
+		<filter-name>lllllllllllllll.IIIIlIIIlIIlIl</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 	
