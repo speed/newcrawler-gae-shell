@@ -155,7 +155,8 @@
     <datastore-index kind="Crawler_ScheduleTable" ancestor="false">
         <property name="nextTime" direction="asc"/>
         <property name="status" direction="asc"/>
-        <property name="lastTime" direction="asc"/>
+        <property name="type" direction="asc"/>
+        <property name="lastTimeMillis" direction="asc"/>
     </datastore-index>
     
     <datastore-index kind="Crawler_ScheduleTable" ancestor="false">
