@@ -146,10 +146,6 @@
     </datastore-index>
     
     <datastore-index kind="Crawler_ScheduleTable" ancestor="false">
-        <property name="siteId" direction="asc"/>
-    </datastore-index>
-    
-    <datastore-index kind="Crawler_ScheduleTable" ancestor="false">
         <property name="scheduleTime" direction="asc"/>
         <property name="siteId" direction="asc"/>
         <property name="taskName" direction="asc"/>
